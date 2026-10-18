@@ -1,0 +1,30 @@
+# Python & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.spec
+
+# PyInstaller & Build Outputs
+build/
+dist/
+*.exe
+
+# Local Databases & Sensitive Session Data
+session_data.json
+redeemed_history.db
+*.db
+*.db-journal
+
+# Environments & Virtualenv
+venv/
+.venv/
+env/
+ENV/
+
+# IDE & OS Files
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+.DS_Store
