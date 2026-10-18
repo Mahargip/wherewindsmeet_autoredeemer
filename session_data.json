@@ -1,0 +1,22 @@
+{
+  "lang": "ID",
+  "code_text": "AD873Q4A44\nHRAD37H3HD\nHP4FH8TEDX\nJMMHK8DKFP\nQW6NACMQET\nNNQK8DM8C8\nWJKNWR4FJA\nYYQ8TJ8WCF\nYT7Y8R3YQY\nNH48MMACNP\nQM3DJEPM3D\nFSWMQ8D6DD\nSSF6DKHMDK\nFHTJDTDPHE\nFJEARA43X4\nSDK8XHRWH4\nNDF3KEFHMX\nCTA7MN88M8\nQEQWC6RAP8\nSMPQ6PH4CY\nAYX8W8FTCW\nMXKP6FAAME\n\n",
+  "pos1": [
+    1020,
+    473
+  ],
+  "pos2": [
+    1110,
+    621
+  ],
+  "pos3": [
+    1038,
+    726
+  ],
+  "countdown": "5",
+  "enter_delay": "2.0",
+  "space_delay": "1.5",
+  "step_esc": true,
+  "step_space": true,
+  "sound": true
+}
