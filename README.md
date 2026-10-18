@@ -1,4 +1,4 @@
-# 🎮 Where Winds Meet - Auto Code Redeemer
+# Where Winds Meet Auto Code Redeemer
 
 An automated desktop utility to redeem gift/promo codes in bulk for **Where Winds Meet** with a modern, sleek, and intuitive GUI.
 
