@@ -1,6 +1,6 @@
 # 🎮 Where Winds Meet - Auto Code Redeemer
 
-Aplikasi desktop otomatisasi untuk menukarkan (redeem) kode gift/promo game **Where Winds Meet** secara massal dengan antarmuka modern, aman, dan mudah digunakan.
+An automated desktop utility to redeem gift/promo codes in bulk for **Where Winds Meet** with a modern, sleek, and intuitive GUI.
 
 ![Platform](https://img.shields.io/badge/Platform-Windows-blue)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-brightgreen)
@@ -9,86 +9,86 @@ Aplikasi desktop otomatisasi untuk menukarkan (redeem) kode gift/promo game **Wh
 
 ---
 
-## ✨ Fitur Utama
+## ✨ Features
 
-- **🚀 Mass / Batch Redeeming**: Masukkan puluhan kode sekaligus, aplikasi akan menginput dan menukarkannya secara berurutan.
-- **🎯 Kalibrasi Koordinat Interaktif**: Menyesuaikan letak tombol input kode, tombol konfirmasi, dan tombol tutup sesuai resolusi layar Anda.
-- **⏱️ Configurable Delays & Countdown**: Atur waktu jeda antar klik dan waktu jeda countdown sebelum otomatisasi berjalan agar Anda sempat berpindah (Alt-Tab) ke layar game.
-- **🛡️ Run as Admin Detection**: Memastikan aplikasi berjalan dengan hak administrator agar automasi mouse dan keyboard dapat berinteraksi mulus dengan window game.
-- **💾 Riwayat Penukaran Otomatis (SQLite)**: Riwayat kode yang sudah berhasil atau gagal disimpan rapi di database lokal sehingga tidak akan menukarkan kode yang sama dua kali.
-- **🔔 Notifikasi Suara (Chime Alert)**: Suara nada sukses saat kode selesai ditukarkan dan nada pemberitahuan ketika proses berhenti.
-- **🎨 Modern Dark Mode UI**: Tampilan elegan berbasis `CustomTkinter` yang nyaman dipandang.
-- **🌐 Dukungan Multi-Bahasa**: Pilihan Bahasa Indonesia dan Bahasa Inggris.
-- **🛑 Emergency Stop**: Tekan tombol darurat (`ESC` atau `F8`) kapan saja untuk menghentikan proses otomatisasi secara instan.
-
----
-
-## 📥 Cara Menggunakan
-
-Terdapat dua cara untuk menjalankan aplikasi ini:
-
-### 🌟 Opsi 1: Download File Standalone `.exe` (Rekomendasi - Tanpa Install Python)
-1. Pergi ke menu [**Releases**](https://github.com/Mahargip/wherewindsmeet_autoredeemer/releases) di repository GitHub ini.
-2. Unduh file `WhereWindsMeet_AutoRedeemer.exe` versi terbaru.
-3. Klik kanan pada file `.exe`, lalu pilih **Run as Administrator** *(Wajib agar simulasi klik dapat masuk ke game)*.
-4. Aplikasi siap digunakan!
+- **🚀 Mass / Batch Redeeming**: Paste dozens of promo codes at once and let the tool automatically enter and redeem them in sequence.
+- **🎯 Interactive Coordinate Calibration**: Easily calibrate and pinpoint the exact screen coordinates for the input field, the "Exchange/Redeem" button, and the "Confirm/Close" pop-up for your monitor resolution.
+- **⏱️ Configurable Delays & Countdown**: Customize safety countdown intervals (giving you time to Alt-Tab into the game) and delay timers between keypresses/clicks for maximum reliability.
+- **🛡️ Run as Admin Detection**: Automatically verifies administrator privileges to guarantee smooth input simulation (`pyautogui`/input hooks) over the game window.
+- **💾 Local SQLite History**: Successfully redeemed and attempted codes are saved locally in `redeemed_history.db` so you never duplicate attempts.
+- **🔔 Sound Effects & Chime Alerts**: Distinct audio cues on successful redemptions and task completion.
+- **🎨 Modern Dark Mode UI**: Built with `CustomTkinter` for a clean, responsive, and aesthetic dark-themed user experience.
+- **🌐 Bilingual Support**: Switch effortlessly between English and Indonesian.
+- **🛑 Emergency Stop**: Press `ESC` or `F8` at any time to instantly abort the automation process.
 
 ---
 
-### 🛠️ Opsi 2: Menjalankan dari Source Code (Python)
+## 📥 Getting Started
 
-Jika Anda ingin menjalankan atau memodifikasi kodenya secara langsung:
+You can run this application in one of two ways:
 
-1. **Clone repository ini:**
+### 🌟 Option 1: Standalone `.exe` (Recommended - No Python Required)
+1. Navigate to the [**Releases**](https://github.com/Mahargip/wherewindsmeet_autoredeemer/releases) page of this repository.
+2. Download the latest `WhereWindsMeet_AutoRedeemer.exe`.
+3. Right-click the `.exe` file and select **Run as Administrator** *(Required for mouse and keyboard simulation to work within the game window)*.
+4. You are ready to go!
+
+---
+
+### 🛠️ Option 2: Running from Source (Python)
+
+If you prefer to run or modify the source code directly:
+
+1. **Clone this repository:**
    ```bash
    git clone https://github.com/Mahargip/wherewindsmeet_autoredeemer.git
    cd wherewindsmeet_autoredeemer
    ```
 
-2. **Install dependensi yang dibutuhkan:**
+2. **Install required dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Jalankan aplikasi:**
+3. **Launch the application:**
    ```bash
    python app.py
    ```
-   *(Atau double click `run_as_admin.bat`)*
+   *(Or double-click `run_as_admin.bat`)*
 
 ---
 
-## 📖 Panduan Langkah demi Langkah di Dalam Game
+## 📖 Step-by-Step In-Game Guide
 
-1. Buka game **Where Winds Meet** dan masuk ke menu **Redeem Code** (Penukaran Kode).
-2. Jalankan **Where Winds Meet Auto Redeemer** sebagai Administrator.
-3. Masukkan daftar kode redeem pada kolom teks (satu baris untuk setiap kode).
-4. Klik tombol **Ambil Posisi** untuk melakukan kalibrasi:
-   - **Posisi 1**: Kolom input teks kode redeem.
-   - **Posisi 2**: Tombol konfirmasi / "Tukar" (Exchange/Redeem).
-   - **Posisi 3**: Tombol konfirmasi hadiah / tombol tutup pop-up (opsional).
-5. Tentukan waktu countdown (misal 5 detik).
-6. Klik **Mulai**. Segera pindah (Alt-Tab) ke jendela game Anda sebelum countdown habis.
-7. Biarkan aplikasi bekerja sampai seluruh kode selesai ditukarkan!
+1. Launch **Where Winds Meet** and open the in-game **Redeem Code** menu.
+2. Open **Where Winds Meet Auto Redeemer** as Administrator.
+3. Paste your list of redeem codes into the text area (one code per line).
+4. Click **Capture Position** to calibrate the buttons:
+   - **Position 1**: Click on the code input text field.
+   - **Position 2**: Click on the **Exchange / Redeem** button.
+   - **Position 3**: Click on the reward confirmation or close button (optional).
+5. Adjust the countdown timer (e.g., 5 seconds) to give yourself enough time to switch focus.
+6. Click **Start**. Immediately switch (Alt-Tab) back to your game window before the countdown finishes.
+7. Sit back and watch the application redeem all codes automatically!
 
 ---
 
-## 🔨 Cara Build Sendiri ke `.EXE`
+## 🔨 Building the Standalone `.EXE`
 
-Jika Anda telah melakukan perubahan pada script `app.py` dan ingin mengemasnya kembali menjadi file `.exe`:
+If you made modifications to `app.py` and want to compile a standalone executable yourself:
 
-1. Pastikan PyInstaller sudah terpasang:
+1. Ensure PyInstaller is installed:
    ```bash
    pip install pyinstaller
    ```
-2. Cukup jalankan script batch build:
+2. Run the provided build script:
    ```cmd
    build_exe.bat
    ```
-3. File `.exe` baru akan otomatis dibuat di folder `dist/` dan di root folder.
+3. The newly generated binary will be placed in both `dist/` and the root folder as `WhereWindsMeet_AutoRedeemer.exe`.
 
 ---
 
 ## ⚠️ Disclaimer
 
-Aplikasi ini adalah alat bantu otomatisasi input (makro mouse & keyboard simulasi standar) untuk mempermudah pemain memasukkan banyak kode promo. Aplikasi ini **TIDAK** memodifikasi file game, memori, atau menginjeksi DLL ke dalam client game. Gunakan dengan bijak sesuai kenyamanan Anda.
+This tool is a simple keyboard and mouse automation macro designed solely to save players time when redeeming large batches of community promo codes. It **DOES NOT** inject code, hook game memory, or modify game files in any way. Use responsibly.
